@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <!--  Last Published: Wed May 29 2019 02:37:20 GMT+0000 (UTC)  -->
-<html data-wf-page="5cdb69c9ded4a01b277c2389" data-wf-site="5cdb69c9ded4a00da77c2385">
+<html data-wf-page="5cdb69c9ded4a078ee7c2383" data-wf-site="5cdb69c9ded4a00da77c2385">
 <head>
   <meta charset="utf-8">
-  <title>Login</title>
-  <meta content="Login" property="og:title">
+  <title>User Dashboard Template</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -25,49 +24,23 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
-  <a data-w-id="bb7013ae-656f-0690-1c48-bd5e1e2edbaf" style="height:0PX" href="https://www.memberstack.io/dashboard-tutorial" class="tutorial-alert-bar w-inline-block">
-    <div class="video-icon"><img src="https://uploads-ssl.webflow.com/5bbfaf3252489b4c484ba9b9/5c7a1104eaea1d2cb3951624_vdieo.svg" alt="" class="video-svg"></div>
-    <div>Tutorial Video: How does this template work?</div>
-  </a>
-  <div class="login-page-wrapper"><a href="preview.html" class="login-nav-link">Preview Dashboard</a>
+  <div class="login-page-wrapper"><a href="index.html" class="login-nav-link">Login</a>
     <div class="login-container w-form">
-      <div class="login-container"></div>
-      <h1 class="login-head">Login to continue</h1>
-      <form id="sign-up" name="wf-form-Sign-up-Form" data-name="Sign up Form" method="post" ms-login="true" class="memberstack-form">
+      <h1 data-membership-id="5ce1e15cc3ea550017f15700" class="login-head">Signup to get started</h1>
+      <form id="sign-up" name="wf-form-Sign-up-Form" data-name="Sign up Form" method="post" ms-signup="true" class="memberstack-form">
+        <div class="field-row">
+          <div class="field-wrapper first-name-wrapper"><label for="node" class="signup-label">First Name</label><input type="text" maxlength="256" required="" ms-field="first-name" class="signup-field w-input"></div>
+          <div class="field-wrapper"><label for="node" class="signup-label">Last Name</label><input type="text" maxlength="256" required="" ms-field="last-name" class="signup-field w-input"></div>
+        </div>
         <div class="field-wrapper"><label for="node" class="signup-label">Email address</label><input type="email" maxlength="256" required="" ms-field="email" class="signup-field w-input"></div>
         <div class="field-wrapper"><label for="password-2" class="signup-label">Password</label><input type="password" class="signup-field w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
-        <div class="secondary-action forgot-password"><a ms-forgot="true" href="#" class="login-link">Forgot password?</a></div><input type="submit" value="Login Now" data-wait="Please wait..." class="login-button w-button"></form>
+        <div class="w-checkbox gdpr-checkbox"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" required="" class="w-checkbox-input"><label for="checkbox" class="terms-text w-form-label"> I agree to the <a href="#" class="login-page-link">Terms</a> and <a href="#" class="login-page-link">Privacy Policy</a></label></div><input type="submit" value="Complete Signup" data-wait="Please wait..." class="login-button w-button"></form>
       <div class="w-form-done">
         <div>Thank you! Your submission has been received!</div>
       </div>
       <div class="error-message w-form-fail">
         <div>Oops! Something went wrong while submitting the form.</div>
       </div>
-    </div>
-    <div memberstack-template="Client Dashboard Template" class="template-tag"><a href="http://memberstack.io" target="_blank" class="w-inline-block"></a></div>
-  </div>
-  <div data-w-id="5422bca3-e4bb-23db-1905-3fa26beede82" style="display:none" class="delete-me-welcome">
-    <div class="help-tooltip tour-tooltip">
-      <div class="help-tooltip-content">
-        <div class="help-title inline-block">Setup To-do</div>
-        <div class="relative">1. Publish this site<br>2. Create a <a href="https://app.memberstack.io/all-websites" target="_blank">MemberStack account</a><br>3. Activate your membership site  🎉🎉🎉<br></div>
-        <div class="tour-dot"></div>
-        <div class="w-embed">
-          <style>
-@keyframes tourDot {
-     0%   {box-shadow: 0 0 0 0px rgba(42, 168, 255, 0.8);}
-     100% {box-shadow: 0 0 0 80px rgba(42, 168, 255, 0);}
-}
-.tour-dot {
-	animation: tourDot 1.5s ease-out infinite;
-  }
-</style>
-        </div>
-      </div>
-      <div class="tour-bottom-row">
-        <div>You can delete this to-do list anytime.</div>
-      </div>
-      <div class="tour-diamond top-right"></div>
     </div>
   </div>
   <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
